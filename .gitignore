@@ -2,12 +2,21 @@
 # CC112 - Fundamentos de Programación
 # Ignorar archivos y carpetas innecesarias
 # ================================
-
+# for WSL generate executable files with explicit extension .exe
 # === C / C++ ===
-*
-!*.*
+*.o
+*.obj
+*.so
+*.a
+*.exe
+*.out
+*.dll
+*.class
+*.gch
+*.log
 
-!*/
+*a.out
+*.run
 
 
 
