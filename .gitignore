@@ -5,23 +5,10 @@
 
 # === C / C++ ===
 *
-!*.cpp
-!*.h
+!*.*
 
-*.o
-*.obj
-*.so
-*.a
-*.exe
-*.out
-*.dll
-*.class
-*.gch
-*.log
+!*/
 
-*a.out
-*.run
-/clases/semana01/ejemplo1
 
 
 
