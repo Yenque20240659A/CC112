@@ -4,6 +4,10 @@
 # ================================
 
 # === C / C++ ===
+*
+!*.cpp
+!*.h
+
 *.o
 *.obj
 *.so
@@ -17,7 +21,8 @@
 
 *a.out
 *.run
-/clases/**/*
+/clases/semana01/ejemplo1
+
 
 
 # === Arch respaldo/temp ===
