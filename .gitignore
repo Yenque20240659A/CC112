@@ -1,0 +1,50 @@
+# ================================
+# CC112 - Fundamentos de Programación
+# Ignorar archivos y carpetas innecesarias
+# ================================
+
+# === C / C++ ===
+*.o
+*.obj
+*.so
+*.a
+*.exe
+*.out
+*.dll
+*.class
+*.gch
+*.log
+
+# === Arch respaldo/temp ===
+*~
+*.swp
+*.tmp
+*.bak
+*.orig
+
+# === Conf editores ===
+.vscode/
+*.code-workspace
+
+# === carpetas ===
+clases/privado/
+laboratorio/temp/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+.Python
+
+# === JavaScript / Node.js ===
+node_modules/
+dist/
+build/
+
+# === Archivos del SO ===
+.DS_Store
+Thumbs.db
+desktop.ini
