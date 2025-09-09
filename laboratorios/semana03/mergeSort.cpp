@@ -5,8 +5,28 @@ const int MAX_TAM = 100;
 int temp[MAX_TAM];
 
 
+void imprimirArreglo(int arr[], int n);
 
 void burbuja(int arr[], int n);
+
+void merge(int arr[], int inicio, int medio, int fin);
+void mergeSort(int arr[], int inicio, int fin);
+
+
+int main(){
+    int n = 5;
+    int arr[MAX_TAM] = {9, 4, 1, 6, 2};
+
+    cout << "Arreglo original: \n";
+    imprimirArreglo(arr, n);
+
+    cout << "Arreglo ordenado con mergeSort: \n";
+    mergeSort(arr, 0, n-1);
+    imprimirArreglo(arr, n);
+
+
+    return 0;
+}
 
 
 //Función que mezcla 2  mitades ordenadas
@@ -37,12 +57,18 @@ void merge(int arr[], int inicio, int medio, int fin) {
         j++;
         k++;
     }
+
+    for(int i = inicio; i <= fin; ++i) {
+        arr[i] = temp[i];
+    }
 }
 
 
 //MergeSort recursivo
 void mergeSort(int arr[], int inicio, int fin) {
     if (inicio < fin) {
+        // mostrar el estado del arreglo antes de la fusión
+        
         int medio = (inicio + fin)/2; //dividir el arrerglo
 
         mergeSort(arr, inicio,medio); //ordenar la  primera mitad
@@ -51,11 +77,6 @@ void mergeSort(int arr[], int inicio, int fin) {
 
         merge(arr, inicio, medio, fin);
     }
-}
-
-int main(){
-
-    return 0;
 }
 
 
@@ -68,7 +89,12 @@ void burbuja(int arr[], int n) {
             }
         }
     }
-    
-
 }
   
+
+void imprimirArreglo(int arr[], int n) {
+    for (int i = 0; i < n; ++i) {
+        cout << arr[i] << " ";
+    }
+    cout << "\n";
+}
