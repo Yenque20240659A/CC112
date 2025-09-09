@@ -21,3 +21,30 @@ dia 1
 f (n) = 1 +  min{f(n/2) si n%2==0, f(n/5), n%5 == 0, f(n-2)}
 */
 
+#include <iostream>
+using namespace std;
+
+int minDias(int n) {
+    //Caso base
+    if (n == 0)
+        return 0;
+    
+    int numDias = 1 + minDias(n-2);
+    
+    if (n%2 == 0)
+        numDias = min(numDias, 1 +  minDias(n/2));
+
+    if (n % 5 == 0)
+        numDias = min(numDias, minDias(n/5));
+
+    return numDias;
+
+    // corregir
+}
+
+int main(){
+
+    cout << minDias(2);
+
+    return 0;
+}
