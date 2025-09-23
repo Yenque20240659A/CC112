@@ -55,14 +55,16 @@ Implementar los algoritmos vistos en la segunda sesión:
    - Counting Sort
    - Jump Search
    - Interpolation Search
+   - etc
 
 3. **Mejorar la organización modular** del código:
-   - Separar los algoritmos en múltiples archivos si es necesario (por ejemplo, `sorting.h/.cpp` y `searching.h/.cpp`).
+   - Separar los algoritmos en múltiples archivos si es necesario (por ejemplo, `sorting.h/ sorting.cpp` y `searching.h/ searching.cpp`).
    - Agregar comentarios descriptivos.
    - Implementar funciones de utilidad, como:
      - Imprimir vectores
-     - Medir tiempo de ejecución
-   - Considere el uso de funciones genéricas mediante plantillas (templates). Aunque no es obligatorio, es una oportunidad para familiarizarse con la programación genérica en C++ y hacer el código más flexible y reutilizable.
+     - Medir tiempo de ejecución (pueden usar la biblioteca estándar <chrono> de C++)
+     - Mostrar una tabla comparando los tiempos de ejecución de los algoritmos para diferentes tamaños (n = 1000, n = 5000, n = 10000)
+   - Considere el uso de funciones genéricas mediante plantillas (templates). Aunque no es obligatorio, es una oportunidad para familiarizarse con la programación genérica en C++ y hacer el código más flexible y reutilizable (con ello pueden lograr que sus algoritmos trabajen con distintos tipos de datos) 
 ---
 
 ## Requisitos de Prueba
@@ -85,9 +87,7 @@ Implementar los algoritmos vistos en la segunda sesión:
 
 ## Fecha de entrega
 
-- **Parte 1:** 14/09/25
-- **Parte 2:** 14/09/25
-
+- **Parte 1, 2:** 12/10/25, 23:00
 ---
 
 <!-- 

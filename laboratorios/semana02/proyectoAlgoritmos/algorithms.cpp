@@ -31,4 +31,6 @@ void burbuja(int arr[], int n) {
     
 
 }
+
+// completar 
     
